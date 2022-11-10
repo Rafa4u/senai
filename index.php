@@ -30,10 +30,12 @@
     $taxamaior = 0.05;
 
 
-    if($vendas == "" or $vendas <0){
+    if($vendas == ""){
         echo "<br>Digite o valor total das vendas";
  }
-
+    else if($vendas <0){
+        echo "<br>Digite um valor positivo";
+    }
     else if($vendas <= 15000){
         echo "O Salário do Vendedor é: R$";
         echo $vendas*$taxamenor+$salariobase;
@@ -46,7 +48,6 @@
 
     }
 
-    
 ?>
 </section>
 </div>
